@@ -1,13 +1,158 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;0,900;1,300;1,500&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* navbar  */
+.logo {
+  width: 40px;
+  object-fit: contain;
+}
+.logotext {
+  font-weight: 900;
+  color: #555;
+}
+.navbar {
+  box-shadow: 1px 5px 15px #111;
+}
+.active {
+  color: orangered !important;
+}
+/* header  */
+.header {
+  width: 100%;
+  height: 90vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+}
+.header h5 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+}
+.header p {
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  width: 75%;
+}
+.mybtn button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  width: 200px;
+}
+.lbtn {
+  background-color: rgb(79, 49, 99);
+  border: 2px solid rgb(79, 49, 99);
+  margin-right: 20px;
+}
+.rbtn {
+  background-color: rgb(205, 182, 50);
+  border: 2px solid rgb(205, 182, 50);
+}
+.lbtn:hover {
+  background-color: orangered;
+  color: #111;
+}
+.rbtn:hover {
+  background-color: rgb(13, 178, 243);
+  color: #111;
+}
+.mycard {
+  /* border: 1px solid #555; */
+  border-radius: 10px;
+  padding: 10px 20px;
+  box-shadow: 1px 10px 15px #111;
+}
+.myicon i {
+  color: orangered;
+  margin: 10px;
+}
+.course {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 20px;
+}
+.course img {
+  height: 50%;
+  width: 100%;
+  object-fit: contain;
+}
+.cstar i {
+  color: orange;
+}
+.course h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+/* cobtact */
+.contact {
+  width: 100%;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+/* contact  */
+.mycontact {
+  height: 50vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+.lpart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.time {
+  display: flex;
+  justify-content: space-around;
+}
+.time .size {
+  background: rgb(211, 207, 207);
+  width: 110px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.time .size:hover {
+  background: #555;
+  color: #fff;
+}
+.footer {
+  background: rgb(2, 2, 19);
+}
+/* media query  */
+@media only screen and (max-width: 500px) {
+  body {
+    font-size: 75%;
+  }
+  .mybtn button {
+    width: 130px;
+    font-size: 15px;
+  }
 }
